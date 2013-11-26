@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/vizgrimoire.css" />
+	<link href="VizGrimoireJS/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+	    body {
+	    padding-top: 60px;
+	    padding-bottom: 40px;
+	    }
+	    .sidebar-nav {
+	    padding: 9px 0;
+	    }
+	</style>
+	<link href="VizGrimoireJS/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="custom.css" />    
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	    <script src="../assets/js/html5shiv.js"></script>
+	    <![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="favicon.png">
+    </head>
+    
+    <body>
+	<div id="navbar"></div>
+	<div class="container-fluid">
+	    <div class="row-fluid">
+		<div class="span1"></div>		      
+		<div class="span10">
+		    <span class="date">Updated on <span class="global-data" data-field="last_date"></span></span>
+		    <!--<div class="container-fluid">-->
+
+
+		    <!-- start first box -->
+		    <div class="well">
+			<div class="row-fluid" style="padding: 0 0 20px 0;">
+			    <div class="span4">
+				<h4>Tickets</h4>
+				<span class="stats">
+				    <div class="row-fluid">
+					<div class="span3">
+					    <strong class="count">
+						<a href="http://issues.liferay.com/issues/?jql=project%20in%20%28AUI%2C%20FACES%2C%20IDE%2C%20LPS%2C%20MAVEN%2C%20MOBILE%2C%20NVTY%2C%20SOS%2C%20SYNC%29%20and%20status%20%3D%20Open%20and%20type%20in%20%28Bug%2C%20%22Regression%20Bug%22%2C%20Improvement%2C%20%22New%20Feature%22%2C%20%22Feature%20Request%22%29"><span class="global-data" data-field="unattended">*</span></a>
+					    </strong>
+					</div>
+					<div class="span8">
+					    <em>unattended tickets,
+						<span class="global-data" data-field="unattended_reopened">*</span> have the status 'Reopened'.</br>
+						<span class="global-data" data-field="unattended_opened_90">*</span>
+						where (re)opened during last 90 days,
+						<span class="global-data" data-field="unattended_opened_7">*</span> during last 7 days. 
+					    </em>
+					</div>
+				    </div>
+				</span>				
+			    </div>
+			    <div class="span4">
+	      			<div id="tickets-flotr2-metrics" 
+				     class="its-flotr2-metrics" data-legend="true"
+				     data-aggregated="false" 
+				     data-metrics="pending_tickets" 
+					 style="width:300px;height:125px;float:right;margin-top:10px;margin-right:0px"></div>
+				
+			    </div>
+			    <div class="span4">
+				<div id="tickets-flotr2-metrics" 
+				     class="its-flotr2-metrics" 
+					 data-legend="true"
+				     data-aggregated="false" 
+				     data-metrics="unattended" 
+				     style="width:300px;height:125px;float:right;margin-top:10px;margin-right:0px"></div>
+				
+			    </div>			
+			</div>
+		    </div>
+		    <!-- end first box -->
+
+		    <div class="well">
+			<div class="row-fluid" style="padding: 0 0 20px 0;">
+			    <!--<div class="span2"><h6>Code reviews</h6></div>-->
+			    <div class="span4">
+				<h4>Code reviews</h4>
+				<span class="stats">
+				    <div class="row-fluid">
+					<div class="span3">
+					    <strong class="count">
+						<a href="http://issues.liferay.com/issues/?jql=project%20in%20%28AUI%2C%20FACES%2C%20IDE%2C%20LPS%2C%20MAVEN%2C%20MOBILE%2C%20NVTY%2C%20SOS%2C%20SYNC%29%20and%20status%20%3D%20Open%20and%20type%20in%20%28Bug%2C%20%22Regression%20Bug%22%2C%20Improvement%2C%20%22New%20Feature%22%2C%20%22Feature%20Request%22%29%20AND%20%22Git%20Pull%20Request%22%20is%20not%20EMPTY"><span class="global-data"
+																																																				   data-field="unattended_code_reviews">*</span></a>
+					    </strong>
+					</div>
+					<div class="span8">
+					    <em>pending code reviews, <span class="global-data" data-field="unattended_code_reviews_created_7">*</span> opened during last 7 days </em>
+					    
+					</div>
+				    </div>
+				</span>
+				
+			    </div>
+			    <!--<div class="row-fluid">-->
+				<div class="span4">
+
+      				<div id="tickets-flotr2-metrics" 
+				     class="its-flotr2-metrics" data-legend="true"
+				     data-aggregated="false" 
+				     data-metrics="pending_crs" 
+				     style="width:300px;height:125px;float:right;margin-top:10px;margin-right:0px"></div>
+
+	      	
+				</div>
+				<div class="span4">
+				<div id="tickets-flotr2-metrics" 
+				     class="its-flotr2-metrics" data-legend="true"
+				     data-aggregated="false" 
+				     data-metrics="unattended_code_reviews" 
+				     style="width:300px;height:125px;float:right;margin-top:10px;margin-right:0px"></div>
+
+		
+				</div>
+			<!--</div>-->
+		    </div>
+		    </div>
+		    <!-- end second box -->
+		    
+		    <div class="well">
+			<div class="row-fluid" style="padding: 0 0 20px 0;">
+			    <!--<div class="span2"><h6>Forum messages</h6></div>-->
+			    <div class="span4">
+				<h4>Forum messages</h4>
+				<span class="stats">
+				    <div class="row-fluid">
+					<div class="span3">
+					    <strong class="count">
+						<span class="global-data" data-field="unreplied_30">*</span>
+					    </strong>
+					</div>
+					<div class="span8">
+					    <em>unreplied messages during last 30
+						days, <span class="global-data" data-field="unreplied_7">*</span> during last 7 days</em>
+					</div>
+				    </div>
+				</span>				
+			    </div>
+			<!--</div>-->
+			<!--<div class="row-fluid">-->
+			    <div class="span4">
+				<div id="mls-flotr2-metrics" 
+				     class="mls-flotr2-metrics" 
+				     data-legend="true"
+				     data-aggregated="false" 
+				     data-metrics="unreplied" 
+				     style="width:300px;height:125px;float:right;margin-top:10px;margin-right:0px"></div>	      	
+			    </div>
+			    <div class="span4">		
+				<div id="mls-flotr2-metrics" 
+				     class="mls-flotr2-metrics" 
+				     data-legend="true"
+				     data-aggregated="false" 
+				     data-metrics="unreplied_by_creation_time,replied_by_creation_time" 
+				     style="width:300px;height:125px;float:right;margin-top:10px;margin-right:0px"></div>
+			    </div>
+			</div><!-- end row-fluid -->
+		    </div><!--end well -->
+		    <!-- end third box -->
+		    <div class="span1"></div>		      
+
+
+		</div><!--span8-->
+
+	    </div>
+	</div><!--row-fluid-->
+	<footer>
+	    <div id="footer"></div>
+	</footer>
+</div><!--/.fluid-container-->
+<script type="text/javascript" src="VizGrimoireJS/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="VizGrimoireJS/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>                    
+
+</body></html>

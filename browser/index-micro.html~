@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" id="theme"
+	      href="VizGrimoireJS/vizgrimoire.css" />
+	<link href="VizGrimoireJS/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="custom.css" />
+	<link href="VizGrimoireJS/bootstrap/css/bootstrap-responsive.css"
+	      rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.png">
+    </head>
+
+    <body>
+	<div class="container-narrow">
+	    <div id="navbar"></div>
+
+
+<!-- summary bar -->
+
+<div class="capped-box overall-summary ">
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+
+<ul class="numbers-summary">
+      <li class="commits">
+        <a href="/MetricsGrimoire/Bicho/commits/master" data-pjax="">
+          <span class="num">
+            <span class="octicon octicon-history"></span>
+            1890
+          </span>
+          contributors
+        </a>
+      </li>
+      <li>
+        <a href="/MetricsGrimoire/Bicho/branches" data-pjax="">
+          <span class="num">
+            <span class="octicon octicon-git-branch"></span>
+            24987
+          </span>
+          commits
+        </a>
+      </li>
+
+      <li>
+        <a href="/MetricsGrimoire/Bicho/releases" data-pjax="">
+          <span class="num">
+            <span class="octicon octicon-tag"></span>
+            34000
+          </span>
+          tickets
+        </a>
+      </li>
+
+      <li>
+        <a href="/MetricsGrimoire/Bicho/contributors">
+          <span class="num">
+            <span class="octicon octicon-organization"></span>
+            23000
+          </span>
+          mail messages
+        </a>
+      </li>
+    </ul>
+</div></div>
+<!-- end of summary bar -->
+
+
+
+            
+	    <div class="row-fluid" style="margin-top:20px;">
+		<!--  <div class="span8"> envision-->
+                <!--<div class="row-fluid">
+                    <div class="span6">
+                     <b><big>Agg. Data and Momentum</big></b><br>
+                     <i>Momentum measures the net difference between two periods</i>
+                    </div>
+                    <div class="span3">
+                     <b><big>Trends</big></b><br>
+                     <i>Periods Over 0 are positive trends. </i>
+                     
+                    </div>
+                    <div class="span3">
+                     <b><big>History</big></b><br>
+                     <i>Evolution through the time</i> 
+                    </div>
+                </div>-->
+		<!--SCM information-->
+		    <div class="row-fluid">
+
+                        
+			<div class="span5"> 
+                            <div class="well">
+				<div style="border-bottom: 1px solid;padding:35px;">
+				<div class="row-fluid">
+				    <div class="span5">
+					<span style="font-size:5em;float:right;">513</span>
+					</div>
+				    <div class="span7">
+					<span style="font-size:1.4em;">code developers</span>
+				    </div>				    
+				</div>
+				</div>
+				<div style="border-bottom: 0px solid;padding:25px;">
+				<div class="flow-fluid">
+				    <div class="span4" style="font-size:1.2em;">core</div>
+				    <div class="span4" style="font-size:1.2em;">regular</div>
+				    <div class="span4" style="font-size:1.2em;">occassional</div>
+				</div>
+				</div>
+				<div style="padding: 40px;">
+				<div class="flow-fluid">
+				    <div class="span4" style="font-size:3em;">18</div>
+				    <div class="span4" style="font-size:2.5em;">230</div>
+				    <div class="span4" style="font-size:2em;">1586</div>
+				</div>
+				</div>
+
+			    </div>
+                        </div>
+			<div class="span7">
+			    <div class="row-fluid">
+				<div class="span12">
+				    <div class="well">
+					<div class="scm-flotr2-metrics-min" data-metrics="scm_commits"
+                                             data-legend="true" style="height:45px;"></div>
+					<a href="scm.html"
+					   style="color:black;"><div class="microdash2"
+								     data-metric="scm_commits"></div></div></a>
+				</div>
+			    </div>
+			    <div class="row-fluid">
+				<div class="well">
+				    <div class="its-flotr2-metrics-min" data-metrics="its_closed"
+                                         data-legend="false" style="height:45px;"></div>
+				    <a href="its.html" style="color:black;"><div class="microdash2" data-metric="its_closed"></div></div></a>
+                            </div>
+			</div>
+		    </div>
+
+
+		    <div class="row-fluid">
+			<div class="span6">
+                          <div class="well">
+                            <div class="its-flotr2-metrics-min" data-metrics="its_changers"
+                                                data-legend="false" style="height:45px;"></div>
+                          <a href="its.html" style="color:black;"><div class="microdash2" data-metric="its_changers"></div></div></a></div>
+			<div class="span3">
+                          <div class="well"><div class="its-flotr2-metrics-min" data-metrics="its_"
+						data-legend="false" style="height:45px;"></div></div></div>
+			<div class="span3">
+                        <div class="well"></div></div>
+		    </div>
+
+		    <div class="row-fluid">
+			<div class="span6">
+                         <div class="well">
+                          <div class="mls-flotr2-metrics-min" data-metrics="mls_sent"
+                                                data-legend="false" style="height:45px;"></div>
+                          <a href="mailinglists.html" style="color:black;"><div class="microdash2" data-metric="mls_sent"></div></div></a></div>
+			<div class="span3">
+                         <div class="well"><div class="mls-flotr2-metrics-min" data-metrics="mls_"
+						data-legend="false" style="height:45px;"></div></div></div>
+			<div class="span3">
+                         <div class="well"></div></div>
+		    </div>
+
+		    <div class="row-fluid">
+			<div class="span6">
+                            <div class="well">
+                              <div class="mls-flotr2-metrics-min" data-metrics="mls_senders"
+                                                data-legend="false" style="height:45px;"></div>
+                              <a href="mailinglists.html" style="color:black;"><div class="microdash2" data-metric="mls_senders"></div></div></a></div>
+			<div class="span3"><div class="well"><div class="mls-flotr2-metrics-min" data-metrics="mls_"
+						data-legend="false" style="height:45px;"></div></div></div>
+			<div class="span3"><div class="well"></div></div>
+		    </div>
+
+	    <div class="row-fluid" style="margin-top:10px;">
+		<div class="span12">
+		    <div id="refcard"></div>
+		</div>
+	    </div>
+	    
+
+
+
+	    </div>
+
+	    <footer>
+		<div id="footer"></div>
+	    </footer>
+	</div>
+	<script type="text/javascript" src="VizGrimoireJS/lib/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="VizGrimoireJS/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>
+    </body>
+</html>

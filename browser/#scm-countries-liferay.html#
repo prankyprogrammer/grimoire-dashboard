@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/vizgrimoire.css" />
+    <link href="VizGrimoireJS/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+      .sidebar-nav {
+      padding: 9px 0;
+      }
+    </style>
+    <link href="VizGrimoireJS/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="custom.css" />    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	<script src="../assets/js/html5shiv.js"></script>
+	<![endif]-->
+    
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="favicon.png">
+
+    
+  </head>
+  <body>
+    <!--<div id="navbar"></div>-->
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+     </button>
+      <!--<a class="brand" href="./"><span class='report_name'></span>
+     (<span class='report_date'></span>)</a>-->
+     <div class="nav-collapse collapse">
+       <ul class="nav">
+	 <li><a href="http://www.liferay.com"><img src="http://cdn.www.liferay.com/osb-community-theme/images/custom/heading.png" alt="Liferay logo" id="logo" height="45" width="90" border=0></a></li>
+         <li class="summary-menu"><a href="./">Summary</a></li>
+         <li class="dropdown scm-menu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Source Code <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="scm.html">basic</a></li> 
+              <li><a href="scm-companies.html">by companies</a></li>
+              <li><a href="scm-countries.html">by countries</a></li>
+              <li><a href="scm-repos.html">by repositories</a></li>
+              <li><a href="scm-countries-liferay.html?data_dir=./data/json/liferay/">by companies for Liferay team</a></li>
+                <li><a href="scm-countries-non-liferay.html?data_dir=./data/json/non-Liferay/">by companies for external contributors</a></li>  
+          </ul>
+         </li>
+         <li class="dropdown its-menu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Issues <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="its.html">basic</a></li> 
+              <li><a href="its-countries.html">by countries</a></li>
+              <li><a href="its-repos.html">by repositories</a></li>
+          </ul>                   
+         </li>
+         <li class="dropdown mls-menu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Forum <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="mls.html">basic</a></li> 
+              <li><a href="mls-companies.html">by companies</a></li>
+              <li><a href="mls-countries.html">by countries</a></li>
+              <li><a href="mls-repos.html">by repositories</a></li>
+          </ul>                                   
+         </li>
+	 <li class="dropdown demographics-menu">
+	 <a class="dropdown-toggle" data-toggle="dropdown" href="" >Focused analysis <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+	      <li><a href="unattended.html">Unattended</a></li> 
+              <li><a href="demography-two.html">Demography (2 months)</a></li> 
+              <li><a href="demography-six.html">Demography (6 months)</a></li>
+	      <li><a href="contribtoproduct.html">Contribution to Product</a></li>
+          </ul>                                   
+         </li>
+         <li><a href="http://bitergia.com"><img src="bitergia-logo.png" 
+            alt="Bitergia logo" id="logo" height="45" width="90" border=0></a></li>
+       </ul>
+     </div><!--/.nav-collapse -->        
+    </div>
+  </div>
+</div>    
+
+    
+    <div class="container-fluid">
+      <div class="row-fluid">	
+	<span class="span12">	
+	<h6>Git activity per country for the Liferay team</h6>
+	<p>Some charts and tables for top countries in the project, and a summary of the evolution of 
+	their participation with links to more detailed information per
+  country.</p>
+	</span>
+      </div>
+      
+      <div class="row-fluid">	
+	<span class="span12">
+	  <h6>List of countries</h6>
+	  <div class="well">
+          <div id="scm-flotr2-countries-nav"></div>
+	  </div>
+	</span>
+      </div>
+      <!--<div class="row-fluid">
+	<span class="span6">
+	  <div style="float:left;width:350px;height:150px" 
+	       class="scm-flotr2-metrics" data-metrics="repositories"
+	       data-legend="true"></div>
+	</span>
+	<span class="span6">
+	  <div style="float:left;margin:10px;width:150px;height:150px" id="scm-repos-summary"></div>
+	</span>
+      </div>-->
+      <div class="row-fluid">
+	<span class="span6">
+	<h5>Commits by country for the Liferay team</h5>
+	  <div class="scm-flotr2-countries-static" 
+	       data-metric="scm_commits" data-limit="10"
+	       style="width:400px;height:250px;margin-right:10px;float:left;margin-bottom:10px"></div>
+	</span>
+	<span class="span6">
+	       <h5>Authors by country for the Liferay team</h5>
+	  <div class="scm-flotr2-countries-static"
+	       data-metric="scm_authors" data-limit="10" 
+	       style="width:400px;height:250px;margin-right:10px;float:left;margin-bottom:10px"></div>
+	</span>
+      </div>
+
+      <div class="row-fluid">
+	<span class="span12">
+	<br/>	<br/>	<br/>
+	</span>
+      </div>
+      
+      <div class="row-fluid">
+	<span class="span12">
+	  <div class="scm-flotr2-countries-list" 
+	       data-metrics="scm_commits,scm_authors"
+           data-show_links = "false"
+	       style="width:900px; margin-right:10px;"></div>
+	</span>
+      </div>
+    </div>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+	
+    <script type="text/javascript" src="VizGrimoireJS/lib/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="VizGrimoireJS/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>                    
+    
+    
+    </body>
+</html>
