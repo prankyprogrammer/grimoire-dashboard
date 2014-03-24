@@ -20,81 +20,50 @@
     <div id="Navbar"></div>
 
     <div id="info" class="row-fluid">
-      <h4>Information about demography</h4>
+      <h4>Attraction / retention</h4>
     </div>
 
     <div class="well">
       <div class="row-fluid">
-        <div class="span3">
-          <p>
-            <i><b>Aging</b> charts show the age of the contributors still
-              active using the date of their first contribution in the different
-              data sources. </i>
-          </p>
-
-          <p>
-            <i>Horizontal bars represent periods of six months where the 0
-              bar shows information of the last six months.</i>
-          </P>
-
-          <p>
-            <i>Big bars on top would mean that old contributors are still
-              active. Big bars at the bottom would mean that new contributors
-              are being retained.</i>
-          </p>
-        </div>
-        <div class="span3">
-          <h6>Source code developers</h6>
-          <div class="Demographics" data-data-source="scm" data-period="0.25"
-            data-type="aging"></div>
-        </div>
-        <div class="span3">
-          <h6>Ticket participants</h6>
-          <div class="Demographics" data-data-source="its" data-period="0.25"
-            data-type="aging"></div>
-        </div>
-        <div class="span3">
-          <h6>Discussion participants</h6>
-          <div class="Demographics" data-data-source="mls" data-period="0.25"
-            data-type="aging"></div>
-        </div>
+        <p>
+        <p>
+          <i><b>Attracted</b>: Number of contributors entering the project
+	    for each cohort. In charts, cohorts are organized by
+	    "age" (time since they entered the project), each bar
+	    representing one of these cohorts.
+	    Large bars for any age mean that the community was attracting
+	    many contributors that time ago.
+        </p>
+          <i><b>Retained</b>: Number of remaining contributors (those still 
+	    active) for each cohort. Large top bars (corresponding to
+	    older cohorts) mean that
+	    experienced contributors are still
+	    active. Large bottom bars mean that new contributors are being
+	    retained.
+        </p>
+	<p>
+	  The ratio between retained and attracted contributors for a cohort
+	  represents the retention ratio for that cohort (fraction of
+	  contributors of that age that are still active).
+	</p>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span4">
+        <h6>Source code developers</h6>
+        <div class="Demographics" data-data-source="scm" data-period="0.5"></div>
+      </div>
+      <div class="span4">
+        <h6>Ticket participants</h6>
+        <div class="Demographics" data-data-source="its" data-period="0.5"></div>
+      </div>
+      <div class="span4">
+        <h6>Discussion participants</h6>
+        <div class="Demographics" data-data-source="mls" data-period="0.5"></div>
       </div>
     </div>
 
-    <div class="well">
-      <div class="row-fluid">
-        <div class="span3">
-          <p>
-            <i><b>Birth</b> charts show the number of contributors joining
-              the community each six months.</i>
-          </p>
-          <p>
-            <i>Horizontal bars represent periods of six months where the 0
-              bar shows information of the last six months.</i>
-          </P>
-          <p>
-            <i>Biggers bars on top would mean that your community attracted
-              more people. Bigger bars at the bottom would mean that your
-              community is attracting more people lately.</i>
-          </p>
-        </div>
-        <div class="span3">
-          <h6>Source code developers</h6>
-          <div class="Demographics" data-data-source="scm" data-period="0.25"
-            data-type="birth"></div>
-        </div>
-        <div class="span3">
-          <h6>Ticket participants</h6>
-          <div class="Demographics" data-data-source="its" data-period="0.25"
-            data-type="birth"></div>
-        </div>
-        <div class="span3">
-          <h6>Discussion participants</h6>
-          <div class="Demographics" data-data-source="mls" data-period="0.25"
-            data-type="birth"></div>
-        </div>
-      </div>
-    </div>
+
 
     <div class="row-fluid" style="margin-top: 10px;">
       <div class="span12">
@@ -105,6 +74,7 @@
     <footer>
       <div id="Footer"></div>
     </footer>
+
   </div>
 
   <script type="text/javascript" src="VizGrimoireJS/lib/jquery-1.7.1.min.js"></script>
