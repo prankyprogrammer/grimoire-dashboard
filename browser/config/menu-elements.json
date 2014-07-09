@@ -1,0 +1,55 @@
+{
+    "scm_off": [
+        "companies",
+        "companies-summary",
+        "contributors",
+        "countries",
+        "domains",
+        "projects",
+        "repos"
+    ],
+    "scm": [
+        "contributors",
+        "repos"
+    ],
+    "mls_off": [
+        "companies",
+        "contributors",
+        "countries",
+        "domains",
+        "projects",
+        "repos"
+    ],
+    "qaforums_off": [
+        "contributors"
+    ],
+    "irc_off": [
+        "contributors",
+        "repos"
+    ],
+    "studies": [
+        "demographics"
+    ],
+    "its_off": [
+        "companies",
+        "contributors",
+        "countries",
+        "domains",
+        "projects",
+        "repos",
+        "states"
+    ],
+    "its": [
+        "contributors",
+        "repos"
+    ],
+    "scr_off": [
+        "companies",
+        "companies-summary",
+        "countries",
+        "projects",
+        "repos"
+    ],
+    "downloads_off": [],
+    "wiki_off": []
+}

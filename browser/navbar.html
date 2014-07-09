@@ -1,44 +1,53 @@
-<div class="navbar navbar-static-top" role="navigation">
-  <div class="navbar-inner">
-    <div class="container-narrow">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse"
-        data-target=".nav-collapse">
-        <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-          class="icon-bar"></span>
-      </button>
-      <a class="brand" href="./"><span class='report_name'></span> (<span
-        class='report_date'></span>)</a>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li class="summary-menu"><a href="./">Summary</a></li>
-          <li class="dropdown scm-menu"><a class="dropdown-toggle"
-            data-toggle="dropdown" href="">Source Code <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="scm.html">basic</a></li>
-              <li><a href="scm-contributors.html">contributors</a></li>
-              <li><a href="scm-repos.html">by repositories</a></li>
-            </ul></li>
-          <li class="dropdown its-menu"><a class="dropdown-toggle"
-            data-toggle="dropdown" href="">Tickets <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="its.html">basic</a></li>
-              <li><a href="its-contributors.html">participants</a></li>
-              <li><a href="its-repos.html">by repositories</a></li>
-            </ul></li>
-          <li class="dropdown studies-menu"><a class="dropdown-toggle"
-            data-toggle="dropdown" href="">Studies<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="../dashboard">Actionable dashboard</a></li>
-              <li><a href="demographics.html">Attraction/retention</a></li>
-            </ul></li>
-          <li><a href="http://bitergia.com"><img
-              src="bitergia-logo.png" alt="Bitergia logo" id="logo" height="45"
-              width="90" border=0>
-            <img src="beta.png" alt="Beta" width="40" height="45" border=0 ></a>
-            </li>
-        </ul>
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#"><span class='report_name'></span></a>
+  <div class="SideNavBar"></div>
+</div>
+
+<!--<div class="navbar navbar-default navbar-fixed-top">
+    <div class="row">
+      <div class="col-md-1">
+	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
       </div>
-      <!--/.nav-collapse -->
+      <div class="col-md-2">
+	<span class="navbar-brand"><img src="./open-stack-cloud-computing-logo.png" style="height: 30px;"></span>
+      </div>
+      <div class="col-md-7 ProjectNavBar">
+      </div>
+
+      <div class="col-md-2">
+	<form action="contributor.html" class="navbar-form navbar-right hidden-xs" role="search" style="margin-right: 25px;">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="company, person, issue, etc.">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
+	</form>
+      </div>
     </div>
+</div>-->
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <span class="navbar-brand">
+    <img src="./demo-bitergia.png" style="height: 25px;">
+  </span>
+  <span class="navbar-brand">
+    <strong id="ProjectName"><div class="ProjectNavBar"></div></strong>
+  </span>
+  <div class="btn-group" id="sp">
   </div>
+  <form action="contributor.html" class="navbar-form navbar-right hidden-xs" role="search" style="margin-right: 25px;">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="company, person, issue, etc.">
+    </div>
+    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Search</button>
+  </form>
 </div>
