@@ -1,13 +1,4 @@
 {
-    "scm_off": [
-        "companies",
-        "companies-summary",
-        "contributors",
-        "countries",
-        "domains",
-        "projects",
-        "repos"
-    ],
     "scm": [
         "contributors",
         "repos"
@@ -30,15 +21,6 @@
     "studies": [
         "demographics"
     ],
-    "its_off": [
-        "companies",
-        "contributors",
-        "countries",
-        "domains",
-        "projects",
-        "repos",
-        "states"
-    ],
     "its": [
         "contributors",
         "repos"
@@ -51,5 +33,10 @@
         "repos"
     ],
     "downloads_off": [],
-    "wiki_off": []
+    "wiki_off": [],
+    "extra": [
+	["Link 1", "http://bitergia.com"],
+	["Link 2", "https://twitter.com/bitergia"],
+	["Link 2", "https://twitter.com/flossmetrics"]
+    ]
 }
