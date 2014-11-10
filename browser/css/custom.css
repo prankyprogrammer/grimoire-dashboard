@@ -170,6 +170,16 @@ scm-contributors **/
     padding: 8px 15px;
 }
 
+/*.breadcrumbtitle >li > a { 
+    color: #C43422;
+    text-decoration: none;
+}
+
+.breadcrumbtitle >li > a:hover { 
+    color: #2A6496;
+    text-decoration: none;
+}*/
+
 /** Boxes (well is a boostrap 3 class)**/
 .well{ 
     background-color: #FFFFFF; }
@@ -182,3 +192,17 @@ scm-contributors **/
 a{ 
    color: #ED9C06;
  }
+
+
+/* style of the release dropdown
+.btn-releaseselector{
+    background-color: #c43422;
+    border-color: #c43422;
+    color: #fff;
+    padding: 10px 20px;
+    line-height: 1.7;
+}
+*/
+
+/** Fix for issue in jasny offside canvas menu in dropdowns */
+.navmenu-nav.dropdown-menu { position: relative; }
