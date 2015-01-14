@@ -1,0 +1,29 @@
+{
+    "menu":{
+    	"scm": [
+            "contributors",
+            "repos"
+    	],
+    	"mls": [
+            "companies",
+            "contributors",
+            "countries",
+            "domains",
+            "projects",
+            "repos"
+    	],
+        "irc": [
+            "contributors",
+            "repos"
+    	],
+    	"studies": [
+            "demographics"
+    	],
+    	"its": [
+            "contributors",
+            "repos"
+    	]
+    },
+    "releases":[]
+}
+
