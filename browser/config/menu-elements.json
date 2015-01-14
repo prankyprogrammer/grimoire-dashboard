@@ -1,42 +1,29 @@
 {
-    "scm": [
-        "contributors",
-        "repos"
-    ],
-    "mls_off": [
-        "companies",
-        "contributors",
-        "countries",
-        "domains",
-        "projects",
-        "repos"
-    ],
-    "qaforums_off": [
-        "contributors"
-    ],
-    "irc_off": [
-        "contributors",
-        "repos"
-    ],
-    "studies": [
-        "demographics"
-    ],
-    "its": [
-        "contributors",
-        "repos"
-    ],
-    "scr_off": [
-        "companies",
-        "companies-summary",
-        "countries",
-        "projects",
-        "repos"
-    ],
-    "downloads_off": [],
-    "wiki_off": [],
-    "extra": [
-	["Link 1", "http://bitergia.com"],
-	["Link 2", "https://twitter.com/bitergia"],
-	["Link 2", "https://twitter.com/flossmetrics"]
-    ]
+    "menu":{
+    	"scm": [
+            "contributors",
+            "repos"
+    	],
+    	"mls": [
+            "companies",
+            "contributors",
+            "countries",
+            "domains",
+            "projects",
+            "repos"
+    	],
+        "irc": [
+            "contributors",
+            "repos"
+    	],
+    	"studies": [
+            "demographics"
+    	],
+    	"its": [
+            "contributors",
+            "repos"
+    	]
+    },
+    "releases":[]
 }
+

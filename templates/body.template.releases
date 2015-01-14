@@ -27,15 +27,15 @@
 
     <div id="Navbar">
       <div role="navigation" class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-	<a href="#" class="navmenu-brand"><span class="report_name">OpenStack Icehouse</span></a>
-	<div class="SideNavBar" id="SideNavBar">
-	  <ul class="nav navmenu-nav">
-	    <li><a href="./"><i class="fa fa-home"></i>	Home</a></li>
-	    <li><a href="./"><i class="fa fa-home"></i>	Home</a></li>
-	    <li><a href="./"><i class="fa fa-home"></i>	Home</a></li>
-	    <li><a href="./"><i class="fa fa-home"></i>	Home</a></li>
-	</ul>
-	</div>
+    <a href="#" class="navmenu-brand"><span class="report_name">OpenStack Icehouse</span></a>
+    <div class="SideNavBar" id="SideNavBar">
+      <ul class="nav navmenu-nav">
+        <li><a href="./"><i class="fa fa-home"></i>    Home</a></li>
+        <li><a href="./"><i class="fa fa-home"></i>    Home</a></li>
+        <li><a href="./"><i class="fa fa-home"></i>    Home</a></li>
+        <li><a href="./"><i class="fa fa-home"></i>    Home</a></li>
+    </ul>
+    </div>
       </div>
     </div>
 
@@ -60,21 +60,5 @@
     <script src="./lib/jasny-bootstrap-3.1.3.min.js"></script>
     <script src="./lib/vizgrimoire.min.js"></script>
     <script src="./lib/openstack.js"></script>
-
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//mon.bitergia.com/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 3]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="//mon.bitergia.com/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
   </body>
 </html>

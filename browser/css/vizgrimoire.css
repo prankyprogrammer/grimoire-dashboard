@@ -69,7 +69,6 @@
 .flotr-mouse-value{
 z-index: 100; }
 
-
 .MetricsEvol,
 .PersonMetrics,
 .TimeTo {
@@ -77,6 +76,7 @@ z-index: 100; }
 }
 
 .FilterItemsNav{ margin-bottom: 30px; }
+
 .FilterItemsMetricsEvol,
 .FilterItemsGlobal,
 .FilterItemMetricsEvol

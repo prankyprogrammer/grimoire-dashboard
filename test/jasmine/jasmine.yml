@@ -11,4 +11,3 @@ spec_dir: "spec/"
 stylesheets: 
   - "browser/css/vizgrimoire.css"
   - "browser/css/custom.css"
-
