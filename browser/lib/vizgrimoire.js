@@ -1,1 +1,0 @@
-../../../../VizGrimoireJS-lib/vizgrimoire.js
