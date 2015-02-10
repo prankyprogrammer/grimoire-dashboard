@@ -22,7 +22,17 @@
     <!-- custom -->
     <!-- <link rel="stylesheet" href="VizGrimoireJS/custom.css">-->
     <link rel="stylesheet" type="text/css" id="theme" href="./css/vizgrimoire.css">
-    <title><span id="ProjectName"></title>
+
+    <style>
+        .timeline {max-height: 320px; overflow-y: scroll;}
+        .timeline .list-group-item {margin: 0; padding: 5px;}
+        .timeline .list-group-item:hover {background-color: #F5F5F5;}
+        .timeline .list-group-item .avatar {display: block; float: left; margin: 0 15px 0 0;}
+        .timeline .list-group-item p {margin: 0; padding: 0;}
+        .timeline .list-group-item .when {color: #aaa;} 
+        .timeline .list-group-item .details {text-align: right;}
+    </style>
+
   </head>
   <body>
 
@@ -33,69 +43,29 @@
 
       <!-- Section HTML will be placed here, do not modify manually -->
       <!-- REPLACE SECTION HTML -->
-      <!-- info text -->
-<div class="well">
-  <div class="row">
-    <div class="col-md-6">
-      <p>Some charts and tables for top countries in the project, and a summary of the evolution of their participation with links to more detailed information per country</p>
+      
+   <div class="row">
+       <div class="panel panel-default">
+           <div class="panel-heading">
+               Timeline
+           </div>
+           <div class="panel-body Events" data-data-source="scm" data-event="newcomers">
+               <ul class="list-group timeline" id="target">
+               </ul>
+           </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <!-- evolution #companies -->
-      <div class="MetricsEvol" data-data-source="mls"
-           data-metrics="mls_countries" data-legend="false"
-           data-title="Active countries per month" data-help="false"
-           data-light-style="true" style="height: 80px;"></div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12 FilterItemsNav">
-      <div class="FilterItemsNav center-block" data-data-source="mls"
-       data-order-by="mls_sent" data-filter="countries"></div>
-    </div>
-  </div>
 
-  <!-- bar charts: commits, authors company -->
-  <div class="row">
-    <!-- commits -->
-    <div class="col-md-1"></div>
-    <div class="col-md-4">
-      <div class="FilterItemsGlobal" data-data-source="mls"
-           data-metric="mls_sent" data-filter="countries"
-           data-legend-div="barchart_legend" data-limit="10"
-           data-order-by="mls_sent"
-           data-title="Mail messages per country"></div>
-    </div>
-    <!-- end commits -->
-    <div class="col-md-2" id="barchart_legend"
-         style="text-align:left;font-size: 1.2em;padding-top:10px;padding-left:20px;"></div>
-    <!-- authors -->
-    <div class="col-md-4">
-      <div class="FilterItemsGlobal" data-data-source="mls"
-           data-metric="mls_senders" data-filter="countries"
-           data-legend="false" data-limit="10" data-order-by="mls_sent"
-           data-title="Mail senders per country"></div>
-    </div>
-    <!-- end authors -->
-    <div class="col-md-1"></div>
-  </div>
-  <!-- end of bar charts: commits, authors company -->
-
-  <!-- commits per company -->
-  <div id="list" class="row">
-    <div class="FilterItemsMiniCharts" data-data-source="mls"
-         data-metrics="mls_sent,mls_senders" data-filter="countries"
-         data-order-by="mls_sent"></div>
-  </div>
-  <div class="row"><div class="col-md-12">
-      <div class="FilterItemsNav" data-data-source="mls"
-       data-order-by="mls_sent" data-filter="countries"></div>
-    </div>
-  </div>
-
-</div>
-<!-- end commits per company -->
-
+    <script id="template" type="x-tmpl-mustache">
+        {{#events}}
+        <li class="list-group-item">
+            <a class="avatar" href="{{uid}}.html"><i class="fa fa-user fa-3x"></i></a>
+            <p><strong><a href="{{uid}}.html">{{name}}</a></strong> <small>{{email}}</small> &bull; <small class="when">{{timestamp}}</small></p>
+            <p class="event">{{event_text}}</p>
+        </li>
+        {{/events}}
+    </script>
       <!-- END SECTION  HTML-->
 
       <footer>
@@ -112,6 +82,9 @@
     <script src="./lib/vizgrimoire.min.js"></script>
     <script src="./lib/timezones.js"></script>
     <script src="./lib/events.js"></script>
+    <script src="./lib/moment.min.js"></script>
+    <script src="./lib/mustache.js"></script>
+
     <!-- Piwik code will be included here-->
     <!-- Piwik -->
 <script type="text/javascript">
