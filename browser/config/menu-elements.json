@@ -19,6 +19,9 @@
             "contributors",
             "repos"
 	],
+        "scr": [
+            "repos"
+        ],
 	"project_map-OFF": []
     },
     "releases":[]
