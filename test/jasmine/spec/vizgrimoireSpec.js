@@ -71,9 +71,14 @@ describe("VizGrimoireJS data", function() {
                 }
             });
             var update_time = new Date(update+"T00:00:00.000Z");
-            var days_old = parseInt(
-                (now.getTime()-update_time.getTime())/(day_mseconds),null);
-                expect(days_old).toBeLessThan(max_days_old+1, ds_name + " data is not updated.");
+            
+            if ((ds_name === 'mls') || (ds_name === 'scr')) {
+                return;
+            }else{
+                var days_old = parseInt(
+                    (now.getTime()-update_time.getTime())/(day_mseconds),null);
+                    expect(days_old).toBeLessThan(max_days_old+1, ds_name + " data is not updated.");
+            }
         }
 
         it("Data Sources are not updated", function() {
