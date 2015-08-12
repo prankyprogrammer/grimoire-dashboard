@@ -20,7 +20,8 @@
             "repos"
 	],
         "scr": [
-            "repos"
+            "repos",
+            "contributors"
         ],
 	"project_map-OFF": []
     },
